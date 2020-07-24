@@ -31,7 +31,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
   ```
   chsh -s $(which zsh)
   ```
-## Zsh Cofiguration
+### Zsh Cofiguration
 
 #### Plugins
 
@@ -69,13 +69,6 @@ source ~/.zshrc
 [PowerLevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh) is my preferred theme to use and very easy to setup. Just follow the prompts in the terminal.
  - Here's a [list](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) of included themes in oh-my-zsh
 
-### Other Downloads
-
-- [Fira Code Font](https://github.com/tonsky/FiraCode/wiki/Installing)
-- [Tiles App](https://www.sempliva.com/tiles/)
-- [Karabiner-Elements](https://karabiner-elements.pqrs.org)
-- [Alfred App](https://www.alfredapp.com)
-
 ## Install nvm
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
@@ -88,3 +81,11 @@ Now check to make sure everything stalled properly
 ```
 node -v && npm -v
 ```
+
+### Other Downloads
+
+- [Fira Code Font](https://github.com/tonsky/FiraCode/wiki/Installing)
+- [Tiles App](https://www.sempliva.com/tiles/)
+- [Karabiner-Elements](https://karabiner-elements.pqrs.org)
+- [Alfred App](https://www.alfredapp.com)
+- [Objektiv](https://nthloop.github.io/Objektiv/)

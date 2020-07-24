@@ -11,6 +11,10 @@
 ## Editor 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - Xcode - download through macOS App Store
+  - You can also just download the Xcode Command Line tools
+    ```
+    xcode-select --install
+    ```
 
 ## Homebrew
 ```

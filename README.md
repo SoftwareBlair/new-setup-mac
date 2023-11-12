@@ -41,37 +41,30 @@
     ```
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
-    - Add plugins to your shell in the `.zshrc` file like so:
+    - [zsh-nvm](https://github.com/lukechilds/zsh-nvm#installation)
       ```
-      plugins=(
-        git
-        nvm
-        yarn
-        zsh-autosuggestions
-        zsh-syntax-highlighting
-        z
-      )
+      git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
       ```
-      - **git**, **nvm**, **yarn**, and **z** are all included in oh-my-zsh
     - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
       ```
       git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
       ```
    - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
-     ```
-     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
-     ```
-5. [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)
-   ```
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | zsh
-    nvm install node
-    nvm install --lts
-    nvm use node
-    ```
-    - Check to make sure everything stalled properly
       ```
-      node -v && npm -v
+      git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
       ```
+    - Add plugins to your shell in the `.zshrc` file like so:
+      ```
+      plugins=(
+        git
+        yarn
+        z
+        zsh-nvm
+        zsh-autosuggestions
+        zsh-syntax-highlighting
+      )
+      ```
+    - **git**, **yarn**, and **z** are all included in oh-my-zsh
 - _*Anytime changes are made to the `.zshrc` file run `source ~/.zshrc`*_ 
 
 ### Shell Themes
@@ -79,7 +72,7 @@
 - [PowerLevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
 - [Included Oh My Zsh Themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 
-### Fonts I like
+### Fonts
 - [Monaspace](https://monaspace.githubnext.com)
 - [Hack Nerd Font](https://www.nerdfonts.com)
 - [Victor Mono](https://rubjo.github.io/victor-mono/)

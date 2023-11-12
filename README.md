@@ -74,13 +74,10 @@
       ```
 - _*Anytime changes are made to the `.zshrc` file run `source ~/.zshrc`*_ 
 
-## Terminal
-
-### Theme
-
-[PowerLevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh) is my preferred theme to use and very easy to setup. Just follow the prompts in the terminal.
- - Here's a [list](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) of included themes in oh-my-zsh
-
+### Shell Themes
+- [Oh My Posh](https://ohmyposh.dev/docs/installation/macos)
+- [PowerLevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
+- [Included Oh My Zsh Themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 
 ### Fonts I like
 - [Monaspace](https://monaspace.githubnext.com)

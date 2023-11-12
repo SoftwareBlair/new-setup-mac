@@ -82,10 +82,8 @@
  - Here's a [list](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) of included themes in oh-my-zsh
 
 
-### Other Downloads
-
-- [Fira Code Font](https://github.com/tonsky/FiraCode/wiki/Installing)
-- [Tiles App](https://www.sempliva.com/tiles/)
-- [Karabiner-Elements](https://karabiner-elements.pqrs.org)
-- [Alfred App](https://www.alfredapp.com)
-- [Objektiv](https://nthloop.github.io/Objektiv/)
+### Fonts I like
+- [Monaspace](https://monaspace.githubnext.com)
+- [Hack Nerd Font](https://www.nerdfonts.com)
+- [Victor Mono](https://rubjo.github.io/victor-mono/)
+- [Fira Code](https://github.com/tonsky/FiraCode/wiki/Installing)

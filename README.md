@@ -1,4 +1,4 @@
-# Basic Mac Setup
+# Basic Dev Setup - Mac
 
 ## Applications
 
@@ -9,13 +9,11 @@
 
 ### Productivity
 - [1Password](https://1password.com/downloads/mac/) : Secure password manager and digital vault.
-- [Notion](https://www.notion.so/desktop/mac) : All-in-one note-taking, task management, and organizational tool.
+- [Raycast](https://www.raycast.com) : Streamlined command center for developer productivity.
 - [Slack](https://slack.com/downloads/mac) : Team communication and collaboration platform.
 - [Discord](https://discord.com/download) : Community-centric voice, video, and text chat app.
-- [Zoom](https://www.zoom.us/download#client_4meeting) : High-quality video conferencing and virtual meeting tool.
 
 ### Development
-- [Raycast](https://www.raycast.com) : Streamlined command center for developer productivity.
 - [Warp](https://www.warp.dev) : Fast, efficient, GPU-accelerated terminal application.
 - [Visual Studio Code](https://code.visualstudio.com/) : Versatile and lightweight code editor with extensive extensions.
 - [Xcode](https://apps.apple.com/gb/app/xcode/id497799835?mt=12) : Apple's IDE for macOS and iOS development.
@@ -73,7 +71,7 @@
 - [Included Oh My Zsh Themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 
 ### Fonts
-- [Monaspace](https://monaspace.githubnext.com)
 - [Hack Nerd Font](https://www.nerdfonts.com)
-- [Victor Mono](https://rubjo.github.io/victor-mono/)
 - [Fira Code](https://github.com/tonsky/FiraCode/wiki/Installing)
+- [Monaspace](https://monaspace.githubnext.com)
+- [Victor Mono](https://rubjo.github.io/victor-mono/)

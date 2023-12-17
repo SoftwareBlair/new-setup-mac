@@ -1,95 +1,77 @@
-# Dev Setup Mac
+# Basic Dev Setup - Mac
 
-## Terminal 
-- [iTerm2](https://www.iterm2.com/)
-  - Set text navigation 
-    ```
-    iTerm → Preferences → Profiles → Keys → Load Preset… → Natural Text Editing
-    ```
-  - Download different [iTerm2 Themes](https://iterm2colorschemes.com/)
+## Applications
 
-## Editor 
-- [Visual Studio Code](https://code.visualstudio.com/)
-- Xcode - download through macOS App Store
-  - You can also just download the Xcode Command Line tools
+### Browsers
+- [Arc](https://arc.net) : Efficient, customizable browser with unique organizational features.
+- [Google Chrome](https://www.google.com/chrome/index.html) : Fast, simple, Google-integrated web browser.
+- [Firefox](https://www.mozilla.org/en-US/firefox/mac/) : Privacy-focused, customizable open-source browser.
+
+### Productivity
+- [1Password](https://1password.com/downloads/mac/) : Secure password manager and digital vault.
+- [Raycast](https://www.raycast.com) : Streamlined command center for developer productivity.
+- [Slack](https://slack.com/downloads/mac) : Team communication and collaboration platform.
+- [Discord](https://discord.com/download) : Community-centric voice, video, and text chat app.
+
+### Development
+- [Warp](https://www.warp.dev) : Fast, efficient, GPU-accelerated terminal application.
+- [Visual Studio Code](https://code.visualstudio.com/) : Versatile and lightweight code editor with extensive extensions.
+- [Xcode](https://apps.apple.com/gb/app/xcode/id497799835?mt=12) : Apple's IDE for macOS and iOS development.
+
+## Initial Setup
+1. Xcode Command Line tools (If Xcode IDE was installed, then this step can likely be skipped. Check with `xcode-select --print-path`)
     ```
     xcode-select --install
     ```
-
-## Homebrew
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-```
-
-## Zsh Setup
-```
-brew install zsh
-```
-
-### Install Oh My Zsh
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
-- If the installation script doesn't set zsh to your default shell run:
-  ```
-  chsh -s $(which zsh)
-  ```
-### Zsh Cofiguration
-
-#### Plugins
-
-Add plugins to your shell in the `.zshrc` file like so:
-```
-plugins=(
-  git
-  nvm
-  yarn
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  z
-)
-```
-- **git**, **nvm**, **yarn**, and **z** are all included in oh-my-zsh
-  
-- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+2. [Homebrew](https://brew.sh)
     ```
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
+3. [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) (Newer Macs come with Zsh by default. Check with `zsh --version`)
+    ```
+    brew install zsh
+    ```
+    - If the installation script doesn't set zsh to your default shell run:
+      ```
+      chsh -s $(which zsh)
+      ```
+4. [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
+    ```
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+    - [zsh-nvm](https://github.com/lukechilds/zsh-nvm#installation)
+      ```
+      git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+      ```
+    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+      ```
+      git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+      ```
+   - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+      ```
+      git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
+      ```
+    - Add plugins to your shell in the `.zshrc` file like so:
+      ```
+      plugins=(
+        git
+        yarn
+        z
+        zsh-nvm
+        zsh-autosuggestions
+        zsh-syntax-highlighting
+      )
+      ```
+    - **git**, **yarn**, and **z** are all included in oh-my-zsh
+- _*Anytime changes are made to the `.zshrc` file run `source ~/.zshrc`*_ 
 
-- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-  ```
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
-  ```
+### Shell Themes
+- [Oh My Posh](https://ohmyposh.dev/docs/installation/macos)
+- [PowerLevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
+- [Included Oh My Zsh Themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 
-
-Anytime changes are made to the `.zshrc` file run
-```
-source ~/.zshrc
-``` 
-
-### Theme
-
-[PowerLevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh) is my preferred theme to use and very easy to setup. Just follow the prompts in the terminal.
- - Here's a [list](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) of included themes in oh-my-zsh
-
-## Install nvm
-```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
-nvm install node
-nvm install --lts
-nvm use node
-```
-
-Now check to make sure everything stalled properly
-```
-node -v && npm -v
-```
-
-### Other Downloads
-
-- [Fira Code Font](https://github.com/tonsky/FiraCode/wiki/Installing)
-- [Tiles App](https://www.sempliva.com/tiles/)
-- [Karabiner-Elements](https://karabiner-elements.pqrs.org)
-- [Alfred App](https://www.alfredapp.com)
-- [Objektiv](https://nthloop.github.io/Objektiv/)
+### Fonts
+- [Hack Nerd Font](https://www.nerdfonts.com)
+- [Fira Code](https://github.com/tonsky/FiraCode/wiki/Installing)
+- [Monaspace](https://monaspace.githubnext.com)
+- [Victor Mono](https://rubjo.github.io/victor-mono/)
